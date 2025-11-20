@@ -4,11 +4,11 @@ Configuración base de la aplicación FastAPI.
 """
 
 from fastapi import FastAPI
+from app.routes.items import router as items_router
 
 app = FastAPI(title="API de Inventario Simple y Segura")
 
-# Importar y registrar rutas aquí
-# from app.routes import ...
+app.include_router(items_router)
 
 @app.get("/")
 def read_root():

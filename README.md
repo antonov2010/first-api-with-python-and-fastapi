@@ -22,3 +22,6 @@ Seguridad (Autenticación y Autorización): Protegeremos nuestra API implementan
 Para simplificar y maximizar el tiempo de aprendizaje, no usaremos una base de datos externa. Los datos se almacenarán temporalmente en una estructura de datos de Python en memoria (una lista o diccionario), permitiendo a los participantes enfocarse completamente en la lógica de FastAPI, Pydantic y la seguridad.
 
 En resumen: Estaremos construyendo la "columna vertebral" de un servicio web, aprendiendo cómo los clientes (como aplicaciones móviles o frontends web) pueden interactuar de forma estructurada y segura con un servidor.
+
+# Documentacion de API
+http://localhost:8000/docs#/
