@@ -16,7 +16,7 @@ class Item(BaseModel):
     id: int = Field(..., description="Identificador único del artículo")
     nombre: str = Field(..., min_length=1, max_length=100, description="Nombre del artículo")
     descripcion: Optional[str] = Field(None, max_length=250, description="Descripción del artículo")
-    cantidad: int = Field(..., ge=0, description="Cantidad disponible en inventario")
+    cantidad: int = Field(..., gt=0, description="Cantidad disponible en inventario, debe ser mayor que cero")
 
     class Config:
         # Ejemplo de datos para la documentación interactiva
