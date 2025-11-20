@@ -1,6 +1,8 @@
 
 📝 API de Inventario Simple y Segura
 
+Repositorio: https://github.com/antonov2010/first-api-with-python-and-fastapi
+
 Descripción
 -----------
 Proyecto de ejemplo para un taller: una API REST construida con FastAPI que gestiona un inventario simple de "Artículos". Está pensada para ser didáctica, incluyendo validación con Pydantic, documentación automática (Swagger) y un mecanismo básico de autenticación/autorizarción para proteger endpoints sensibles.
