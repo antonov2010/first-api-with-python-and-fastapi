@@ -141,7 +141,7 @@ celerybeat.pid
 env/
 venv/
 ENV/
-env.bak/
+env.bak/uvicorn main:app --reload
 venv.bak/
 
 # Spyder project settings
@@ -159,7 +159,7 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
-# Pyre type checker
+# Pyre type checkeruvicorn main:app --reload
 .pyre/
 
 # pytype static type analyzer
@@ -194,7 +194,7 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Cursor
+# Cursoruvicorn main:app --reload
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
 #  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
 #  refer to https://docs.cursor.com/context/ignore-files
@@ -205,3 +205,4 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+.agent
