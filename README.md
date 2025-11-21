@@ -195,6 +195,8 @@ pip --version
 
 **Email:** neri.ramirez549@gmail.com
 
+**LinkedIn:** [neri-ramirez](https://www.linkedin.com/in/neri-ramirez/)
+
 
 ## Licencia
 
