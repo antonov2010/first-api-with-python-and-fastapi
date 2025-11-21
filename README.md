@@ -1,28 +1,4 @@
-API de Inventario — Documentación técnica
------------
-Proyecto de ejemplo para talleres: una API REST construida con FastAPI que gestiona un inventario simple de "artículos". Es didáctica y muestra buenas prácticas básicas con Pydantic, documentación automática (Swagger) y un mecanismo simple de autenticación/autorizarción para proteger endpoints sensibles.
-
-Características principales
---------------------------
-- CRUD de `Item`: crear, listar, obtener por id, actualizar y eliminar.
-- Autenticación mediante formulario (OAuth2 Password Flow) con token simulado.
-- Base de datos en memoria (`app/core/database.py`) — ideal para demos y pruebas.
-- Documentación interactiva vía Swagger UI (`/docs`).
-
-Requisitos
----------
-- Python 3.10+ (el proyecto indica 3.13.9, usar la versión disponible estable).
-- Recomendada: crear y activar un entorno virtual antes de instalar dependencias.
 # API de Inventario — Documentación técnica
-
-Repositorio: https://github.com/antonov2010/first-api-with-python-and-fastapi
-
-## Descripción
-
-Este repositorio contiene una API REST desarrollada con FastAPI destinada a gestionar un inventario simple de artículos. El proyecto tiene un propósito didáctico y se emplea para demostraciones y talleres, mostrando validación con Pydantic, documentación automática (OpenAPI/Swagger) y un mecanismo básico de autenticación para proteger determinados endpoints.
-# API de Inventario — Documentación técnica
-
-Repositorio: https://github.com/antonov2010/first-api-with-python-and-fastapi
 
 ## Descripción
 
@@ -110,7 +86,7 @@ pytest
 - `GET /items/{item_id}` — Obtención de un artículo por identificador.
 - `PUT /items/{item_id}` — Actualización de un artículo.
 - `DELETE /items/{item_id}` — Eliminación de un artículo.
--- `POST /auth/token` — Autenticación mediante OAuth2 Password Flow; devuelve `access_token` (token simulado para el ejemplo).
+- `POST /auth/token` — Autenticación mediante OAuth2 Password Flow; devuelve `access_token` (token simulado para el ejemplo).
 
 ## Autenticación y pruebas
 
@@ -156,7 +132,7 @@ Este proyecto emplea contraseñas en texto plano y tokens simulados con fines di
 	- `id` (int): Identificador único del artículo.
 	- `nombre` (str): Nombre del artículo (1–100 caracteres).
 	- `descripcion` (str, opcional): Descripción del artículo (máx. 250 caracteres).
-	- `cantidad` (int): Cantidad disponible (>= 0).
+	- `cantidad` (int): Cantidad disponible (> 0).
 
 - Comportamiento de las rutas principales (`app/routes/items.py`):
 	- `GET /items/` — Devuelve la lista completa de artículos. No requiere autenticación.
